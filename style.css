@@ -67,21 +67,6 @@
     .welcome-text{
         z-index: 2;
     }
-	.color-circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: inline-block;
-            margin: 5px;
-        }
-        .color-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
     .img {
         width: 84px;
         /* background-image: url(https://static.tildacdn.com/tild3063-6361-4433-b263-623532323033/011-wedding-car_1.png); */
@@ -336,10 +321,6 @@
 
 
 @media((min-width:320px) and (max-width:767px)) {
-    .color-container {
-	max-width: 220px; /* Ширина для двух иконок + отступы */
-	margin: 0 auto;
-    }
     .body-content {
         max-width: 700px;
         line-height: 30px;
@@ -401,10 +382,6 @@
 }
 
 @media((min-width:768px) and (max-width:1344px)) {
-    .color-container {
-                white-space: nowrap;
-                max-width: 100%;
-    }
     .body-content {
         max-width: 700px;
         line-height: 30px;
@@ -529,4 +506,34 @@
         align-self: self-start;
     }
 
+}
+.color-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin: 5px;
+}
+.color-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .color-container {
+	max-width: 220px; /* Ширина для двух иконок + отступы */
+	margin: 0 auto;
+    }
+}
+
+/* Десктопы */
+@media (min-width: 769px) {
+    .color-container {
+	white-space: nowrap;
+	max-width: 100%;
+    }
 }
