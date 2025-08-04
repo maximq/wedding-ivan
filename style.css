@@ -1,0 +1,521 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: .5px;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    #timer {
+        text-align: center;
+        margin-top: -38px;
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: normal;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 40px;
+        padding: 5px;
+        line-height: normal;
+    }
+
+    h3 {
+        font-weight:900;
+    }
+
+    .welcome-wedding {
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+
+    .welcome-text-main {
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-text-date {
+        text-align: center;
+        font-size: 18px;
+        padding: 5px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .body-content {
+        max-width: 700px;
+        line-height: 30px;
+        background-color: #fff;
+        margin: auto;
+        padding: 0 20px 60px;
+    }
+    .welcome-text{
+        z-index: 2;
+    }
+	.color-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: inline-block;
+            margin-right: 10px;
+	}
+	.color-container {
+		white-space: nowrap;
+	}
+
+    .img {
+        width: 84px;
+        /* background-image: url(https://static.tildacdn.com/tild3063-6361-4433-b263-623532323033/011-wedding-car_1.png); */
+        height: 84px;
+        border-radius: 50%;
+        /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    }
+
+    .portrait-photo {
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .photo-block {
+        height: 100vh;
+    }
+
+    .filter {
+        filter: opacity(0.3);
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        background-color: black;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .welcome {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-bottom: 30px;
+        background: url("img/portrait.jpg") no-repeat top center / cover;
+        background-attachment: scroll;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        justify-content: center;
+    }
+
+    .line {
+        height: 100px;
+        width: 2px;
+        background-color: black;
+        margin: auto;
+    }
+
+    .action-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0;
+        column-gap: 10px;
+        grid-template-areas: "imgLine time"
+            "imgLine description"
+        ;
+
+    }
+
+    .image-line {
+        width: 84px;
+        grid-area: imgLine;
+    }
+
+    .time {
+        grid-area: time;
+        font-size: 25px;
+        /* align-self: self-end; */
+    }
+
+    .description {
+        grid-area: description;
+        margin-top: 0%;
+    }
+
+    .timing-block {
+        margin: 60px auto;
+    }
+
+    .map-block {
+        margin: 60px auto;
+    }
+
+    .dress-code{
+        text-align: center;
+    }
+
+    .organization{
+        text-align: center;
+    }
+
+    .section-block {
+        margin: 60px auto;
+    }
+
+    .wishes-block {}
+
+
+
+    .color {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .org {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .colors {
+        display: flex;
+        gap: 49px;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        justify-content: center;
+    }
+
+    .men{
+        gap: 20px
+    }
+
+    .orgs {
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        justify-content: center;
+
+    }
+    .transfer-descr{
+        max-width: 500px;
+        margin: auto;
+    }
+    .transfer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        justify-content: space-between;
+    }
+    .transfer-descr p{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .map{
+        max-width: 600px;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    }
+    .orgs a{
+        text-decoration: none;
+        margin-top: 5px;
+    }
+    .orgs p{
+        margin-top: 5px;
+    }
+    .orgs div{
+        margin: auto;
+    }
+
+    .wishes p{
+        margin-bottom: 15px;
+    }
+
+    .peach {
+        background-color: #ffe5b4;
+    }
+
+    .coffee1 {
+        background-color: #9E7557;
+    }
+
+    .coffee2 {
+        background-color: #E4B9A6;
+    }
+
+    .coffee3 {
+        background-color: #F1E2DB;
+    }
+
+    .coffee4 {
+        background-color: #D6B39F;
+    }
+
+    .coffee5 {
+        background-color: #F1DACA;
+    }
+
+    .coffee6 {
+        background-color: #B48F74;
+    }
+
+    .coffee7 {
+        background-color: #FFF0E1;
+    }
+
+    .coffee8 {
+        background-color: #A07F6C;
+    }
+
+    .ligth-gray {
+        background-color: #e2e0e6;
+    }
+
+    .white {
+        background-color: white;
+        border: 1px solid black;
+    }
+
+
+    .down-arrow {
+        position: absolute;
+        top: calc(100vh - 120px);
+        left: calc(50% - 14px);
+        width: 0;
+        height: 30px;
+        border: 2px solid;
+        border-radius: 2px;
+        color: white;
+        animation: jumpInfinite 1.5s infinite;
+    }
+
+    .down-arrow:after {
+        content: " ";
+        position: absolute;
+        top: 12px;
+        left: -10px;
+        width: 16px;
+        height: 16px;
+        border-bottom: 4px solid;
+        border-right: 4px solid;
+        border-radius: 4px;
+        transform: rotateZ(45deg);
+    }
+
+    @keyframes jumpInfinite {
+        0% {
+            margin-top: 0;
+        }
+        50% {
+            margin-top: 20px;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+
+
+@media((min-width:320px) and (max-width:767px)) {
+    .body-content {
+        max-width: 700px;
+        line-height: 30px;
+        background-color: #fff;
+    }
+
+    .welcome {
+        background-attachment: scroll;
+    }
+
+    *{
+        font-size: 15px;
+    }
+
+    .welcome-text-main {
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-text-date {
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .action-item {
+
+        /* display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto; */
+        gap: 0;
+        column-gap: 10px;
+        grid-template-areas: "imgLine time"
+            "imgLine description"
+        ;
+
+    }
+
+    .line {
+        height: 100px;
+    }
+}
+
+@media((min-width:768px) and (max-width:1344px)) {
+    .body-content {
+        max-width: 700px;
+        line-height: 30px;
+        background-color: #fff;
+    }
+
+    .time {
+        grid-area: time;
+        font-size: 25px;
+        align-self: self-start;
+    }
+
+    .welcome-text-main {
+        text-align: center;
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-text-date {
+        text-align: center;
+        font-size: 25px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 52px;
+        margin-bottom: 50px;
+    }
+
+    .action-item {
+
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        grid-template-areas: "time imgLine description";
+    }
+}
+
+@media((min-width:1335px)){
+    .body-content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px 60px;
+    }
+
+    .welcome {
+        background-attachment: fixed;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: .5px;
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    .welcome-text-main {
+        text-align: center;
+        font-size: 20px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .welcome-text-date {
+        text-align: center;
+        font-size: 25px;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 52px;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 52px;
+        text-align: center;
+        margin-bottom: 50px;
+        line-height: normal;
+    }
+
+    .action-item {
+
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        grid-template-areas: "time imgLine description";
+    }
+
+    .line {
+        height: 50px;
+        width: 2px;
+        background-color: black;
+        margin: auto;
+    }
+
+    .time {
+        grid-area: time;
+        font-size: 25px;
+        align-self: self-start;
+    }
+
+}
