@@ -333,6 +333,10 @@
 
 
 @media((min-width:320px) and (max-width:767px)) {
+    .color-container {
+	max-width: 220px; /* Ширина для двух иконок + отступы */
+	margin: 0 auto;
+    }
     .body-content {
         max-width: 700px;
         line-height: 30px;
@@ -394,6 +398,10 @@
 }
 
 @media((min-width:768px) and (max-width:1344px)) {
+    .color-container {
+                white-space: nowrap;
+                max-width: 100%;
+    }
     .body-content {
         max-width: 700px;
         line-height: 30px;
