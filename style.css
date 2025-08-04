@@ -68,16 +68,19 @@
         z-index: 2;
     }
 	.color-circle {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             display: inline-block;
-            margin-right: 10px;
-	}
-	.color-container {
-		white-space: nowrap;
-	}
+            margin: 5px;
+        }
+        .color-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
 
     .img {
         width: 84px;
